@@ -1,0 +1,26 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <string> 
+#include <iostream>
+
+using namespace std;
+
+int main(void)
+{
+    string aim;
+    string str;
+    do
+    {
+        cout << "vvedite simbol" << endl;
+        cin >> aim;
+    } while (aim.length()>1);
+    do
+    {
+        cout << "vvedite string" << endl;
+        cin >> str;
+    } while (str.length()<2);
+    if (str.find(aim) + 1 > 0)
+        cout << "dayyii simbol pod nomerom " << str.find(aim) + 1;
+    else
+        cout << "dannogo simbol net v stroce";
+}
